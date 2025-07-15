@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pandas as pd
 from googletrans import Translator
 import json, os, time, sys, argparse

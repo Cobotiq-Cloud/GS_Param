@@ -1,0 +1,786 @@
+compute_pose: 
+  qr_code_type: 3
+device: 
+  anti_drop: 
+    anti_drop0: 
+      distance_threshold: 0.8
+      screened: true
+    anti_drop1: 
+      distance_threshold: 0.8
+      screened: true
+    anti_drop2: 
+      distance_threshold: 0.8
+      screened: true
+    anti_drop3: 
+      distance_threshold: 0.8
+      screened: true
+  battery: 
+    use_real_electricity: true
+    use_voltage_level: false
+    voltage_level: "23.0,23.3,23.6,23.9,24.2,24.5,24.8,25.1,25.4,25.7,26.0"
+  charger: 
+    enable_manual_charger_check: true
+    manual_charger_check_off_relay_time_thr: 10.0
+    manual_charger_check_time_thr: 7.0
+  footprints: 
+    - circle_center: [[-0.14, 0.05], [-0.14, -0.05], [0.18, 0.0]]
+      edge_direction: ["LEFT_FRONT", "FRONT", "FRONT", "RIGHT_FRONT", "RIGHT", "RIGHT", "RIGHT_REAR", "REAR", "REAR", "LEFT_REAR", "LEFT", "LEFT"]
+      frame_id: "base_link"
+      name: "master"
+      points: [[0.402, 0.231], [0.482, 0.137], [0.518, 0.0], [0.482, -0.137], [0.402, -0.231], [0.257, -0.309], [-0.22, -0.345], [-0.321, -0.345], [-0.321, 0.0], [-0.321, 0.345], [-0.22, 0.345], [0.257, 0.309]]
+      recovery_circle_center: [[-0.17, -0.17], [-0.17, 0.17], [0.08, 0.12], [0.08, -0.12], [0.35, -0.1], [0.35, 0.1]]
+  mcu: 
+    brush_down_type: 1
+    cancel_ttl_485: true
+    emergency_type: 0
+    forward_dec: 500
+  network: 
+    always_5g: false
+    disable_upper_wifi_module: false
+    max_hardreset_cnt: 24
+    mobile_switch: true
+    ping_hosts: "8.8.8.8,114.114.114.114"
+    portal_support: true
+    reset_apn_for_kpn_on: false
+    speed_monitor_interval: 600
+    speed_sample_item_cnt: 60
+    speed_sample_total_kbytes: 3072
+    wifi_search_ap_list_fast_http_interval: 3
+    wifi_search_ap_list_fast_interval: 6
+    wifi_search_ap_list_interval: 50
+    wifi_search_ap_list_slam_http_interval: 20
+    wifi_search_ap_list_slam_interval: 20
+    wifi_switch: true
+  protector: 
+    protector4: 
+      screened: false
+    protector5: 
+      screened: false
+    protector6: 
+      screened: false
+    protector7: 
+      screened: false
+    protector8: 
+      screened: true
+    protector9: 
+      screened: true
+    protector_voltage_limit: 420
+  scrubber: 
+    after_brush_pwm_during_drain: 26
+    aromatherapy_concentration_level_setting: "40,20,45,10,60,10"
+    backward_half_uplift_squeegee: true
+    backward_liftup_device_speed: 0.1
+    beneath_limit_switch_threshold_duration: 10
+    brush_current_diff_tolerance: 20
+    brush_current_level_setting: "45,45,45"
+    brush_current_tolerance: 3
+    brush_down_current_threshold: 0.0
+    brush_down_full_time: 5000
+    brush_down_half_time: 2500
+    brush_down_level_setting: 40
+    brush_down_pwm: 0
+    brush_electric_signal_continued_duration: 3000
+    brush_electric_signal_deviation_ratio: 2
+    brush_max_current: 80.0
+    brush_max_position: 40.0
+    brush_min_position: 18.0
+    brush_position_adjust_interval_time: 168.0
+    brush_position_level_setting: "40,40,40"
+    brush_position_self_adjust_initial_position: 18.0
+    brush_position_self_adjust_wait_current_time: 3.0
+    brush_pressure_level: 1
+    brush_pressure_level_setting: "45,45,45"
+    brush_spin_level: 1
+    brush_spin_level_setting: "33,65,100"
+    brush_type: 0
+    brush_up_current_threshold: 0.0
+    brush_up_half_time: 3000
+    brush_up_pwm: 0
+    brush_usage_alert: 300
+    cleaning_ability_dust_push_settings: "garbage"
+    cleaning_ability_sweep_settings: "garbage"
+    cleaning_ability_wash_settings: "empty"
+    close_valve_by_robot_still_time: 60.0
+    cloth_brush_pressure_level_setting: "15,15,15"
+    delay_lift_squeegee_with_water: true
+    delay_lift_squeegee_without_water: true
+    destination_drag_and_collect_water_length: 1.0
+    detergent_level: 90
+    detergent_level_setting: "30,60,90"
+    detergent_motor_duty_ratio_max: 100
+    detergent_motor_duty_ratio_min: 0
+    device_operation_timeout_time: 20.0
+    disc_brush_position_adjust_delta_current_level_setting: "12,9,6"
+    disinfectant_supply_timeout: 1200
+    disinfection_storage_max_time: 72.0
+    diskbrush_height_auto_adjustment: true
+    double_rolling_brush_type: 0
+    dry_spin_speed_brush_after: 20
+    dry_spin_speed_brush_front: 36
+    dust_detect_sensor_error_voltage_threshold: 5
+    dust_full_distance: 20
+    dust_push_clean_max_idle_duration: 1200.0
+    dust_push_clean_max_work_duration: 60.0
+    dust_push_clean_spin_level_setting: "20,60,100"
+    dust_push_liquid_reverse_duration: 600
+    dust_push_liquid_supply_duration: 2
+    dust_push_liquid_volume: 30
+    dust_push_spin_level_setting: "20,60,100"
+    dust_push_type: 0
+    dust_push_usage_alert: 20.0
+    enable_auto_replace_brush: false
+    enable_brush_lift_motor: true
+    enable_brush_motor: true
+    enable_brush_motor_off_while_place_rotating: true
+    enable_brush_position_self_adjust: false
+    enable_brush_type_detection: false
+    enable_clean_dust: true
+    enable_detergent_motor: true
+    enable_device_limit: true
+    enable_disc_brush_self_adjust: false
+    enable_disinfection_storage_warning: false
+    enable_dust_push: false
+    enable_filter: false
+    enable_flush_nozzle_regularly: true
+    enable_fnl_cali_param: true
+    enable_fnl_check: true
+    enable_fnl_detection: true
+    enable_get_device_limits: true
+    enable_head_cover_detection: false
+    enable_infiltration: false
+    enable_mcu_debug: true
+    enable_mist_spray: false
+    enable_navi_priority_water_collection: true
+    enable_neg_voltage_check: false
+    enable_seat_switch: true
+    enable_spray_motor: true
+    enable_squeegee_down_check: false
+    enable_squeegee_lift_motor: true
+    enable_squeegee_motor: true
+    enable_valve: true
+    enable_voltage_checked_min_speed: 0.0
+    enable_voltage_monitor: true
+    exist_filter: true
+    exist_low_low_level_sensor: true
+    fan_level: 1
+    fan_level_setting: "40,60,100"
+    fan_pwm_during_drain: 60
+    filter_usage_alert: 20
+    flush_nozzle_clean_frequency: 0
+    flush_nozzle_fan_level: 100
+    flush_nozzle_single_spray_duration: 5.0
+    flush_nozzle_speed_level_value: 0.3
+    flush_nozzle_spray_interval_time: 15.0
+    flush_nozzle_spray_total_time: 20.0
+    flush_nozzle_start_hour_natural_day: 0
+    flush_nozzle_water_level: 100
+    flush_water_percent: 100
+    flush_with_high_water_flow_distance: 6.0
+    flush_with_high_water_flow_duration: 60.0
+    flush_with_high_water_flow_interval: 7200.0
+    fnl_fan_level_value: 100
+    front_brush_pwm_during_drain: 26
+    front_rolling_brush_reverse: false
+    front_rolling_brush_usage_alert: 300
+    full_hair_brush_pressure_level_setting: "15,15,15"
+    half_lift_brush_during_inspection: true
+    head_cover_detection_timeout_time: 60.0
+    high_water_flow_and_remaining_water_interval: 1800.0
+    independent_water_collection_length: 1.0
+    infiltration_duration: 30.0
+    infiltration_spray_water_level_v1: 28
+    infiltration_spray_water_level_v2: 10
+    intermit_water_spray_time_setting: "1,1"
+    keep_beeping: false
+    keep_flush_water: 300.0
+    keep_squeegee_suction: 60.0
+    keep_squeegee_suction_new: 10.0
+    keep_suction: 30.0
+    keep_suction_new: 5.0
+    left_brush_usage_alert: 300
+    left_side_brush_reverse: false
+    left_side_brush_usage_alert: 20.0
+    mcu_debug_channel: 0
+    mist_bag_low_level_continued_duration: 10.0
+    mist_box_low_level_continued_duration: 3.0
+    mist_liquid_supply_timeout_duration: 600.0
+    mist_spray_distance_level_setting: "20,60,100"
+    mist_spray_rest_working_duration: 5.0
+    mist_spray_work_max_angle: 10.0
+    mist_spray_work_min_speed: 0.0
+    motor_work_min_speed: 0.01
+    ordinary_dust_push_usage_alert: 200.0
+    over_limit_switch_threshold_duration: 10
+    pre_task_spray_duration: 5.0
+    pre_task_spray_water_level: 40
+    process_remaining_water_distance: 30.0
+    pure_water_tank: true
+    rear_device_type: 0
+    rear_rolling_brush_max_current: 25.0
+    rear_rolling_brush_reverse: false
+    rear_rolling_brush_usage_alert: 300
+    right_brush_usage_alert: 300
+    right_side_brush_reverse: false
+    right_side_brush_usage_alert: 20.0
+    roller_squeegee_usage_alert: 200
+    rolling_brush_after_spin_level_setting: "9,25,30"
+    rolling_brush_after_type: 0
+    rolling_brush_front_spin_level_setting: "18,25,30"
+    rolling_brush_front_type: 0
+    rolling_brush_max_position: 35.0
+    rolling_brush_min_current: 5.0
+    rolling_brush_min_position: 28.0
+    rolling_brush_motor_after: 10
+    rolling_brush_motor_front: 10
+    rolling_brush_position_level_setting: "25,23,21"
+    rolling_brush_position_self_adjust_time: 300.0
+    rolling_brush_pressure_level_setting: "19,19,19"
+    rolling_brush_self_adjust_target_position: 30.0
+    rolling_brush_self_cleaning_increased_level: 15
+    rolling_brush_shift_minus_position: 3.0
+    rolling_brush_spin_dry_time: 60.0
+    rolling_brush_usage_alert: 300
+    secondary_water_low_level_continued_duration: 3.0
+    side_brush_lift_motor_overload_current_threshold: 1000
+    side_brush_lift_motor_overload_time_threshold: 2000
+    side_brush_spin_level_setting: "40,40,40"
+    soft_squeegee_usage_alert: 200
+    speed_limit_device_function_warning_time: 60.0
+    speed_limit_device_operation_warning_time: 30.0
+    spin_level_adjusting_brush_position: 26
+    spin_level_adjusting_brush_position_hybrid: 10
+    spin_level_adjusting_brush_position_not_hybrid: 25
+    spray_detergent_default_pwm: 30
+    spray_detergent_time_pwm: 30
+    squeegee_down_check_continuous_time: 2.0
+    squeegee_down_check_wait_device_time: 3.0
+    squeegee_down_time: 0.0
+    squeegee_motor_running_time: 0.0
+    squeegee_type: 0
+    squeegee_up_half_time: 4000
+    static_cleaning_ability: 0
+    suction_pressure_beneath_limit_floating_ratio: 0
+    suction_pressure_beneath_limit_voltage_setting: "3.74,3.59,3.46,3.34,3.22,3.18,3.12"
+    suction_pressure_limit_level_setting: "40,50,60,70,80,90,100"
+    suction_pressure_over_limit_voltage_setting: "4.06,3.99,3.94,3.90,3.86,3.90,3.92"
+    target_current_tolerance: 1
+    v_shape_brush_current_level_setting: "19,19,19"
+    v_shape_brush_pressure_level_setting: "15,15,15"
+    valve_protect_time: 8.0
+    voltage_checked_rest_duration: 30.0
+    water_level: 1
+    water_level_min_accuracy: 10
+    water_level_opt_interval: 9.0
+    water_level_setting: "30,40,60"
+    water_pump_rest_max_time: 600.0
+    width: 0.715
+  ultrasonic: 
+    ultrasonic0: 
+      mcu_access_precedence: 2
+      screened: false
+    ultrasonic1: 
+      mcu_access_precedence: 1
+      screened: false
+    ultrasonic2: 
+      mcu_access_precedence: 4
+      screened: false
+    ultrasonic3: 
+      mcu_access_precedence: 3
+      screened: false
+    ultrasonic4: 
+      mcu_access_precedence: 0
+      screened: false
+    ultrasonic5: 
+      mcu_access_precedence: 5
+      screened: false
+dirty_config: 
+  garbage: 
+    garbage: 2
+    large_garbage: 2
+    mixed_garbage_temp: 2
+  model: 
+    filter_crossover_detect: false
+    open_garbage_sewage_ss: false
+    open_sewage_detect: true
+  other: 
+    blackobject: 2
+    carpet: 2
+    escalator_edge: 2
+    escalator_pedal: 2
+    fallarea_edge: 1
+    footpad: 2
+    glass: 2
+    pole: 2
+    pole_pillar: 1
+    shelves: 2
+    showcase: 2
+    wire: 2
+  stain: 
+    dust: 1
+    mixed_garbage: 1
+    mixed_garbage_temp: 1
+    sewage: 1
+feature: 
+  software: 
+    aio_active_clean_switch_enable: true
+    ebable_workstation_abilities: false
+    enable_coverage_mode: true
+    enable_strongwash_workmode: false
+    enabled_battery_cell_undervoltage: true
+    is_docking_check_enable: true
+gaussian_mapping_v5: 
+  LOCALIZATION: 
+    POSE_GRAPH: 
+      max_bnb_search_window_reduce_linear_rate: 1.0
+      multi_hypothesis_constraint_options: 
+        trajectory_candidate_options: 
+          evaluate_method: "ENTROPY_2D, TOPVIEW_CONSTRAINT_SIZE"
+  MAPPING: 
+    POSE_GRAPH: 
+      constraint_builder: 
+        fast_correlative_scan_matcher: 
+          max_shortest_path_value: 25.0
+      multi_hypothesis_constraint_options: 
+        enable: false
+    map_warn_options: 
+      angle_speed_threshold: 75.0
+      first_mapping_area_ratio_threshold: 0.8
+      first_mapping_memory_used_threshold: 0.84
+      linear_speed_threshold: 1.3
+      max_area_threshold: 120000.0
+      no_loop_dis_threshold: 200.0
+      second_mapping_area_ratio_threshold: 0.9
+      second_mapping_memory_used_threshold: 0.87
+      third_mapping_area_ratio_threshold: 1.0
+      third_mapping_memory_used_threshold: 0.9
+labor_saving: 
+  environment: "normal"
+move_base: 
+  global_costmap: 
+    not_decrease: true
+  goal_base: 
+    PADA: 
+      a: 0
+      p10: [[-0.14, 0.05], [-0.14, -0.05], [0.16, 0.0]]
+      p9: [[-0.14, 0.05], [-0.14, -0.05], [0.16, 0.0]]
+    PS: 
+      a: 0
+      p14: [[-0.14, 0.05], [-0.14, -0.05], [0.16, 0.0]]
+      p15: [[-0.14, 0.05], [-0.14, -0.05], [0.16, 0.0]]
+    PU: 
+      a: 0
+      p14: [[0.24, -0.05], [0.24, 0.05], [0.575, -0.05], [0.575, 0.05], [0.92, -0.05], [0.92, 0.05]]
+      p15: [[0.24, -0.05], [0.24, 0.05], [0.575, -0.05], [0.575, 0.05], [0.92, -0.05], [0.92, 0.05]]
+pnc: 
+  decision: 
+    realtime_autocover: 
+      improve_pedestrian_interaction_experience: false
+  gaussian: 
+    strategy: 
+      close_plan_mask_limit: false
+  planning: 
+    moving_people_decider: 
+      inspection_for_dynamic_people: 15.0
+      inspection_for_static_people: 15.0
+      use_decider: true
+sensor: 
+  lidar: 
+    lidar2d_max_dist: 25
+strategy: 
+  app: 
+    glassdoor_edit: true
+  area_global_planner: 
+    leaf_distance: 0.665
+  camera_anti_drop_enable: true
+  camera_detect_tanwei_enable: false
+  camera_subscribe_imu: true
+  chassis: 
+    enable_labor_saving: false
+    enable_speed_filter: false
+    imu: 
+      overturn_pitch_alarm_threshold: 45.0
+      overturn_roll_alarm_threshold: 45.0
+      roll_alarm_enable: true
+    low_angular_vel: 0.1
+    low_sum_angular_diff: 4.2
+    low_sum_vel_diff: 2.2
+    low_vel: 0.05
+    overcurrent_protect: 
+      enable_battery_disconnection_relay_off: true
+      enable_current_monitor: true
+      enable_overheating_relay_off: true
+      vacuum_motor_speed_threshold: 50000
+    quick_switch_manual_mode_timeout: 2.0
+    save_error_flag: true
+    speed_v: 
+      remote_level: 100
+    sum_angular_diff: 7.0
+    sum_vel_diff: 3.8
+    torque_control: 
+      v_level_3: 1.0
+    virtual_battery: 
+      battery_volume: 60.0
+      driver_to_battery_voltage_compensate: -0.350232
+      driver_to_battery_voltage_compensate_when_charging: -0.819758
+      use_virtual_battery: false
+    wheel_motor_monitor: 
+      enable_zero_drift_detection: true
+  checker: 
+    detail_update_interval: 1440
+    less_warning: true
+    update_complete: true
+    update_enable: true
+    update_startup_delay: 10
+  coamap_2d: 
+    inscribed_radius: 0.351
+  console: 
+    app_language: "en"
+    auto_abandon_uncovered_area: true
+    auto_charge: true
+    auto_initialize: true
+    auto_send_task_report: true
+    battery_consumption_level: 45
+    check_device_time: 5
+    clean_effect_test_area_max: 10
+    clean_effect_test_area_min: 2
+    clean_water_consumption_level: 29
+    clean_water_empty_filter_time: 10
+    clean_water_full_hotfix_additional_duration: 50
+    clean_water_full_hotfix_additional_duration_large: 50
+    clean_water_full_hotfix_full_percent: 60
+    clean_water_full_hotfix_on: false
+    daily_clean_L0: 720
+    daily_clean_L2: 1200
+    daily_clean_clear_warning_source: 0
+    daily_clean_remind_level: 0
+    daily_clean_trigger_40_dust_pkg_cd: 10
+    daily_clean_trigger_40_hepa_cd: 10
+    daily_clean_trigger_maintain_cd: 30
+    daily_clean_trigger_s_dust_box_cd: 10
+    daily_clean_trigger_s_dust_pkg_cd: 10
+    daily_clean_trigger_s_rolling_brush_cd: 10
+    daily_clean_trigger_s_side_brush_cd: 10
+    daily_clean_trigger_s_water_tank_cd: 10
+    default_active_clean_switch_val: true
+    default_coverage_mode: "standard"
+    dirty_water_consumption_level: 60
+    dirty_water_full_filter_time: 10
+    disable_select_point_init: false
+    disable_select_point_init_new: false
+    elevator_behavior_mode: 1
+    emergency_auto_resume_enabled: true
+    emergency_auto_resume_global_enabled: false
+    emergency_auto_resume_method: 2
+    emergency_auto_resume_wait_duration: 30
+    enable_device_limits: false
+    enable_draw_inaccessible_area: true
+    enable_short_distance_move: true
+    gohome1_auto_enable: true
+    gohome1_idle_cd: 10
+    gohome1_idle_cd_before: 1490
+    gohome1_stop_temp_task_cd: 28800
+    gohome1_stop_temp_task_cd_before: 0
+    gohome1_task_finish_cd: 10
+    gohome1_task_finish_cd_before: 0
+    hide_product_information: false
+    is_intelligent_charging: false
+    land_mark_check: false
+    local_lora_addr: "LoraAddr_8003"
+    login_fail_lock_time: 30.0
+    low_battery_with_charge: 10
+    low_power_mode_enable: true
+    low_power_mode_prohibit_timer: 30
+    low_power_mode_timer: 30
+    maintain_mode: 
+      leave_duration: 1800
+      notify_leave_duration: 300
+    max_battery_with_charge: 97
+    privacy_switcher: true
+    reboot: 
+      auto_recovery_duration: 300
+      checker_reboot_enable: true
+      checker_reboot_interval: 10800
+      no_recovery_duration: 300
+      no_recovery_interval: 600
+    sewage_wait_time: 10
+    short_distance_move_length: 5
+    similar_point_detect: false
+    slam_floor_recognition_time: 8.0
+    strong_wash_args_detergent_wait_time: 180
+    strong_wash_args_foam_num: 0
+    strong_wash_args_scrub_num: 1
+    strong_wash_args_speed_level: 1
+    strong_wash_args_spray: 1
+    strong_wash_args_wash_num: 1
+    supported_task_version: 1
+    use_additional_delta_duration: false
+    user_volume: 0
+    warning_guide_idle_time: 3600
+  depth_camera_occlusion_detect_enable: false
+  depth_camera_occlusion_triggered_time_thresh: 60
+  depth_estimate_fusion_ghost_enable: true
+  device_controller: 
+    is_fixed_water_distance: true
+    is_on_device_during_tasks: true
+    lift_brush_distance: 10.0
+    max_stop_water_distance: 35.0
+    min_stop_water_distance: 30.0
+    post_stop_water_distance: 0.0
+    post_uplift_brush_distance: 1.0
+    post_uplift_squeegee_distance: 10000.0
+    stop_water_distance: 30.0
+  dl_infer: 
+    data_feedback: 
+      enable: true
+      enable_freespace_endpoint: true
+      enable_garbage_sewage: true
+      enable_gdpr_face_detection: true
+      enable_ground_objects_seg: true
+      enable_vpr: true
+      enable_xyf_detect: true
+    open_depth_estimation: true
+    open_freespace_endpoint: true
+    open_garbage_sewage_task: false
+    open_gdpr_face_detection: false
+    open_ground_objects_seg: true
+    open_keypoint: true
+    open_vpr: true
+    open_xyf_detect: true
+  elevator_base: 
+    cut_off_dis: 1.5
+    get_in_parking_dis: 0.1
+    get_in_parking_in_place_time: 3.0
+    get_in_stuck_time: 2.0
+    get_in_timeout: 30.0
+    get_in_waiting_time: 10.0
+    get_out_parking_dis: 0.1
+    get_out_timeout: 60.0
+    get_out_waiting_time: 45.0
+    ordering_min_dis: 1.5
+    quit_in_waiting_time: 5.0
+    rotation_radius: 0.65
+    take_elevator_velocity: 0.4
+    try_get_in_limit_times: 2
+    waiting_zone_dis_to_entry: 0.5
+  elevator_controller: 
+    close_door_timeout: 300
+    close_door_timeout_while_retry: 10
+    control_elevator_way: 1
+    elevator_communication_interval: 3
+    elevator_floor_duration: 120
+    elevator_strategy: "balance"
+    limit_times_enter_failed: 3
+    open_door_timeout: 300
+    operate_door_interval: 3
+    order_switch_seconds: 60
+    order_waiting_timeout: 300
+    retry_enter_elevator_num: 99
+    retry_out_elevator_num: 3
+    send_close_door: 1
+    take_elevator_retry_times: 5
+    take_elevator_timeout: 1200
+    wait_door_opened_seconds: 1
+    wait_for_getin_seconds: 14
+    wait_timeout_times_avoidance: 3
+    waiting_elevator_timeout: 300
+    waiting_status_time: 90
+  elevator_entry_pose_node: 
+    entry_pose_distance: 2.5
+  follow_base: 
+    force_perform_action: true
+    front_safe_check_dis: 1.0
+    max_avoid_obstacle_distance: -1.0
+    perform_action: true
+    speed_level: -1
+    speed_level_setting: "0.7,0.9,1.2"
+    stop_duration: 0.5
+    stop_duration_with_human: 1.5
+    stop_duration_without_human: 0.8
+    stop_water_distance: 30.0
+  four_point_sticker_detect_enable: true
+  fov_realtime_auto_cover: 
+    draining_time: 120.0
+    enable_abandon_area_sewage: false
+    enable_full_safe_check: false
+  goal_base: 
+    advanced_avoid_obstacle: false
+    avoid_goal_obstacle_stop_duration: 10.0
+    avoid_obstacle_stop_duration: 2.0
+    follow_path_patience_time: 20.0
+    max_path_length_diff: 15.0
+    max_path_length_quotien: 3.0
+    path_safe_stopping_distance: 1.0
+    planner_error_patience_time: 20.0
+    speed_level: -1
+    speed_level_setting: "0.4,0.8,0.9,1.2"
+    stop_duration_with_human: 1.5
+    stop_duration_without_human: 0.8
+    using_force_recovery: false
+    using_further_planner: true
+  gs_data_feedback: 
+    camera_cover_detect: 
+      enable: true
+    camera_interference_detect: 
+      enable: true
+    dl: 
+      enable: true
+    dl_depth_fusion: 
+      enable: true
+    dl_hodgepodge: 
+      enable: true
+    perc_anti_drop: 
+      enable: true
+    perc_fnl: 
+      enable: true
+    perc_ir_sticker: 
+      enable: true
+    slam_data: 
+      enable: true
+  gs_parameter: 
+    last_cleaning_efficiency_mode: "standard"
+  gs_power_protect: 
+    danger_power_percent: 5
+    shut_power_percent: 2
+    valid: false
+  gs_work_station: 
+    check_battery_percent: 80
+    check_full_water_delay_time: 5
+    check_voltage_interval_time: 600
+    check_workstation_online_delay_time: 30
+    clean_water_additional_time: 5
+    clean_water_empty_percent: 0
+    clean_water_full_percent: 100
+    clean_water_level_volumes: [10.0, 10.0, 10.0]
+    clean_water_level_volumes_large: [30.0, 30.0, 40.0]
+    clean_water_total_time: 180
+    clean_water_total_time_large: 250
+    configed_robot_ability: 7
+    delay_recovery_clean_water_empty_warn_sec: 10
+    dirty_water_empty_percent: 0
+    dirty_water_full_percent: 100
+    is_force_docking_on: true
+    lora_connect_range: 5.0
+    lora_msg_time_out_sec: 10
+    need_order: true
+    open_lora_check_warning: true
+    shout_down_dirty_water_delay: 30
+    waiting_point_enable: false
+    waste_water_total_time: 600
+    waste_water_total_time_large: 999
+    workstation_charge_enable: true
+    ws_dirty_water_extra_high_waring_seconds: 10
+    yield_each_dock_lowest_time: 600.0
+    yield_highest_power_percent: 80.0
+    yield_lowest_power_percent: 30.0
+    yield_shared_station_enable: false
+  hexagon_sticker_detect_enable: true
+  hodgepodge: 
+    event_tracking: 
+      enable: true
+      enable_general_objects: true
+      enable_warning_trigger: true
+  iec: 
+    PB63327: true
+    force_unleashed: true
+  ir_sticker_enable: true
+  laser_filter: 
+    safe_area_filter: 
+      length_0: 1.5
+      length_1: 2.5
+      width_0: 1.2
+      width_1: 2.7
+  localization: 
+    P85: -100.0
+    P86: 3
+    P96: 0.75
+    latent_obstacle: 
+      rgbd_ranges: 
+        pointcloud1: 1.1
+      rgbd_topics: 
+        pointcloud1: true
+      ultrasonic_topics: 
+        ultrasonic0: true
+        ultrasonic1: true
+        ultrasonic2: true
+        ultrasonic5: true
+  move_base: 
+    allow_backward: true
+    avoid_people_dist: 0.15
+    backward_check_dis: 0.2
+    backward_to_dis: 0.3
+    efficiency_submode: 0
+    enable_backtracking_rec: true
+    enable_narrow_backward_recovery: true
+    enable_normal_backward_recovery: true
+    enable_point_cloud_recovery: true
+    forbid_all_backward_rec: false
+    fovcover_mission_never_done: false
+    max_velocity_linear: 1.0
+    min_turn_radius: 0.15
+    mos_off_max_vel: 0.3
+    open_mos_limp: true
+    shortcut_corner: false
+    turn_head_back_when_backward: true
+    wheel_prints_clean: false
+  narrow_path: 
+    path_type: 1
+    use_narrow_map: true
+  path_recorder: 
+    offset_path: 0.1
+    offset_switch: false
+    one_lane_width: 3.0
+  pnc: 
+    edge_scenario: 
+      enable_detect_ex_corner: true
+      enable_detect_in_corner: true
+      enable_follow_edge: true
+      enable_follow_virtual_wall_lines: false
+      follow_edge_min_safe_distance: 0.0
+      follow_obstacle_max_safe_distance: 0.175
+    gate_control: 
+      enable_efficiency_gate: false
+    lattice_planner: 
+      use_dist_map: false
+    param_convert_version: "aio_1_2"
+    realtime_autocover: 
+      autocover4_mode: 0
+      main_angle_belief_ratio: 0.52
+      main_angle_samples_ratio: 0.25
+      never_give_up_time: 7200.0
+      skip_outer_and_inner_edge_follow: false
+      use_never_give_up: true
+  project_node: 
+    enable_inspect_deduplicate: true
+    enable_sementic_map: true
+    endpoint_thresh: 2.5
+    freespace_escalator_charger_mark: true
+    freespace_fall_charger_mark: true
+    gate_area_ignore_flag: false
+    gate_area_thresh: 5.5
+  rcc: 
+    daily_clean_tick_seconds: 7200
+    elevator_request_timeout: 3
+    hide_timer_schedule_task: true
+    remote_control_limitation: false
+  realsense2: 
+    anti_drop_effect_enable: true
+    anti_drop_enable: true
+    anti_drop_image_boundary_deficiency_detect: false
+  realtime_auto_cover: 
+    enable_wall_tracking: true
+    safe_distance: 0.03
+    use_virtual_wall_tracking: false
+  scan_filters: 
+    glass_filter_status: true
+    large_area_cover_enable: true
+    large_area_cover_triggered_time_thresh: 60.0
+  small_obj_detect: 
+    launch_lidar_small_object_detector: true
+    launch_line_segment: true
+  sound: 
+    greenlight_customization: false
+  stair_detect: 
+    is_enable: true
+wireless_localization: 
+  wireless_search: 
+    enable: true

@@ -1,4 +1,4 @@
-﻿分类,功能,功能说明,参数位置,参数名称,参数释义,参数类型,下限,上限,默认值
+﻿﻿分类,功能,功能说明,参数位置,参数名称,参数释义,参数类型,下限,上限,默认值
 ,,,/launch/param/pnc/decision/improve_pedestrian_interaction_experience,提升行人避让体验,是否在路径规划时考虑行人避让,,,,false
 ,,,/launch/param/pnc/gaussian/close_plan_mask_limit,关闭规划掩码限制,是否关闭对行人避让的掩码限制,,,,true
 ,,,/launch/param/pnc/planning/use_decider,使用避让决策器,是否启用决策器逻辑进行行人避让,,,,false

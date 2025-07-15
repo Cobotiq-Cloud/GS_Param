@@ -1,0 +1,38 @@
+# 基础术语
+策略,strategy
+检查器,checker
+控制台,console
+其它,other
+
+# 时间与调度
+隐藏定时任务,hide_timer_schedule_task
+调度任务,schedule_task
+
+# 产品信息
+隐藏产品信息,hide_product_information
+高仙工作站,gs_work_station
+摄像头探位检测使能,camera_detect_tanwei_enable
+
+# 感知与检测
+小物体检测,small_obj_detect
+启动LiDAR小物体检测,launch_lidar_small_obj
+开启污水检测,open_sewage_detect
+杆柱,pole_pillar
+
+# 运动与控制
+移动底盘,move_base
+目标底座,goal_base
+电梯控制器,elevator_controller
+
+# 设备与系统
+电机驱动器,motor_driver
+电池,battery
+高仙电源保护,gs_power_protect
+
+# 算法与映射
+同步定位与地图构建,SLAM
+深度学习推理,dl_infer
+超声波,ultrasonic
+
+# 其它
+喷嘴冲洗,flush_nozzle

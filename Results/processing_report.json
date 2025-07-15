@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-07-15T17:21:30.394025",
+  "processing_statistics": {
+    "files_processed": 4,
+    "parameters_updated": 4461,
+    "new_parameters_added": 10,
+    "translation_matches": 2173
+  },
+  "original_dataset": {
+    "rows": 1065,
+    "columns": 11,
+    "column_names": [
+      "﻿﻿﻿Column_1",
+      "Column_2",
+      "Column_3",
+      "Column_4",
+      "Column_5",
+      "Column_6",
+      "Column_7",
+      "Column_8",
+      "Column_9",
+      "Column_10",
+      "Column_11"
+    ]
+  },
+  "updated_dataset": {
+    "rows": 1065,
+    "columns": 21,
+    "new_columns": [
+      "默认值_en",
+      "参数类型_en",
+      "功能_en",
+      "下\n限_en",
+      "参数名称_en",
+      "上\n限_en",
+      "参数释义_en",
+      "功能说明_en",
+      "默认\n值_en",
+      "﻿﻿﻿分类_en"
+    ],
+    "column_names": [
+      "﻿﻿﻿Column_1",
+      "Column_2",
+      "Column_3",
+      "Column_4",
+      "Column_5",
+      "Column_6",
+      "Column_7",
+      "Column_8",
+      "Column_9",
+      "Column_10",
+      "Column_11",
+      "﻿﻿﻿分类_en",
+      "功能_en",
+      "功能说明_en",
+      "参数名称_en",
+      "参数释义_en",
+      "参数类型_en",
+      "默认\n值_en",
+      "下\n限_en",
+      "上\n限_en",
+      "默认值_en"
+    ]
+  },
+  "matched_dataset": {
+    "rows": 648,
+    "columns": 21,
+    "yaml_match_rate": "60.8%"
+  }
+}

@@ -1,0 +1,25 @@
+﻿分类,功能,功能说明,参数位置,参数名称,参数释义,参数类型,下限,上限,默认值
+,,,/launch/param/pnc/decision/improve_pedestrian_interaction_experience,Improve pedestrian avoidance experience,Whether to consider pedestrian avoidance when planning the path,,,,false
+,,,/launch/param/pnc/gaussian/close_plan_mask_limit,Turn off planning mask restrictions,Whether to close mask restrictions on pedestrian avoidance,,,,true
+,,,/launch/param/pnc/planning/use_decider,Use the avoidance decision maker,Whether to enable decision-maker logic for pedestrian avoidance,,,,false
+,,,/pnc/planning/moving_people_decider/use_decider,M-line enables avoidance decision makers,Whether to enable pedestrian avoidance decision-maker in M-line scenarios,,,,false
+,,,/pnc/gaussian/strategy/close_plan_mask_limit,M-line closing mask limit,Is it possible to close pedestrian avoidance mask restrictions in M-line scenarios?,,,,true
+,,,/pnc/decision/realtime_autocover/improve_pedestrian_interaction_experience,M-line enhances avoidance experience,Will the pedestrian avoidance experience be improved in the M-line scenario,,,,false
+,,,/strategy/move_base/forbid_all_backward_rec,All escape and retreat,Is it prohibited to all backward behaviors triggered by escape?,,,,false
+,,,/strategy/move_base/enable_backtracking_rec,Allow return to escape and retreat,Whether to allow escape backwards along the original path,,,,true
+,,,/strategy/move_base/enable_normal_backward_recovery,Allow ordinary people to escape and retreat,Is it allowed to escape from difficulties and retreat?,,,,true
+,,,/strategy/move_base/enable_narrow_backward_recovery,Allow narrow paths to escape and retreat,Is it allowed to retreat triggered by narrow path escape?,,,,true
+,,,/root/launch/PNC/2.0/param/pnc/gaussian.yaml:constraint.max_velocity_linear,Maximum linear speed limit,Maximum navigation line speed (m/s) for PNC 2.0 and later versions,,,,1.2
+,,,/strategy/move_base/max_velocity_linear,Maximum Linear Speed (APP),Navigation speed set by M10 and AIO+ versions through the APP,,,,1.2
+,,,/strategy/pnc/edge_scenario/follow_edge_min_safe_distance,Minimum safe distance for edge fitting,Minimum safe distance from the wall line when welting (m),,,,0
+,,,/strategy/pnc/edge_scenario/follow_obstacle_max_safe_distance,Maximum obstacle edge distance,Consider the maximum safe distance of obstacles when applying the wedge (m),,,,
+,,,/strategy/pnc/edge_scenario/enable_follow_edge,Enable styling,"Whether to enable the ""edemming"" function as a whole",,,,true
+,,,/strategy/pnc/edge_scenario/enable_follow_virtual_wall_lines,Enable virtual wall edge sticker,Is it allowed to perform edges on virtual wall lines?,,,,false
+,,,/strategy/pnc/edge_scenario/enable_detect_in_corner,Identify the angle switch,Whether to trigger edges at the corners,,,,true
+,,,/strategy/pnc/edge_scenario/enable_detect_ex_corner,Identify the positive angle switch,Whether to trigger the edge at the corner,,,,true
+,,,/strategy/charger_base/quit_charge_move_dis,Movement distance of pile,The distance from the robot to retreat after exiting the charging pile (m),,,,
+,,,/root/launch/PNC/2.0/param/pnc/gaussian.yaml:quit_max_steering_link_dis,Maximum steering link pile withdrawal distance,"Under PNC2.0 version, the maximum direction steering link distance when releasing piles (m)",,,,1.3
+,,,/strategy/charger_base/use_narrow_charger,Narrow space pile switch,Whether to enable pile retraction mode in narrow channel environment,,,,false
+,,,/strategy/charger_base/long_narrow_aisle_distance,Narrow space retraction distance,"The distance (m) of pile retraction in a narrow channel environment, -1 means that this parameter is not enabled",,,,-1.0
+,,,/pnc/gaussian/charge/close_safe_check_dist,Close the safety inspection distance of piles,Distance of not performing safety inspection when retracting piles/pole (m),,,,1.2
+,,,/pnc/gaussian/charge/electrode_compression_dist,Electrode pressure distance,The distance from pressing the electrode back to the pile (m),,,,0.1
